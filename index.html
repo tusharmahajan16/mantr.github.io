@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <title>COVID-19 STATISTICS</title>
+  </head>
+  <body style="background-color: #FFE4B5;">
+    <center>
+      <br />
+      <br />
+    </center>
+    <header>
+      <div class="logo">
+        <img src="./resources/img/logo.png" alt="" />
+        <p>COVID-19<br />STATISTICS</p>
+      </div>
+      <nav>
+        <ul>
+          <li > <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="blackborder">PREVENTION</a></li>
+                
+                <li > <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms" class="blackborder">SYMPTOMS</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">DEVELOPERS</a>
+            <ul class="dropdown">
+                <li><a href="https://www.linkedin.com/in/tushar-mahajan-94b865185/">Tushar Mahajan</a></li> 
+                <li><a href="https://www.linkedin.com/in/nihal-agarwalla-687441177">Nihal Agarwal</a></li>
+                <li><a href="https://www.linkedin.com/in/aman-kothari-351a4719a">Aman Kothari</a></li>
+                <li><a href="https://www.linkedin.com/in/rohan-arora-462830178">Rohan Arora</a></li>
+                <li><a href="https://www.linkedin.com/in/madhav-mundhra-a7bb66166">Madhav Mudra</a></li>
+            </ul>
+      </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">Change Country</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <br>
+            <div class="title">New Cases</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <br>
+            <div class="title">Recent Recovered</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <br>
+            <div class="title">Recent Deaths</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="copyright">
+          <p>Copyright © 2020 MANTR <br>&nbsp&nbsp&nbsp&nbsp All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+    <script src="resources/js/countries.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
+</html>
